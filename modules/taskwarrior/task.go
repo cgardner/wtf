@@ -1,3 +1,6 @@
+/**
+ * This package was copied directly from https://github.com/jubnzv/go-taskwarrior/blob/master/task.go and modified to suit my needs
+ **/
 package taskwarrior
 
 type Task struct {

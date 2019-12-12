@@ -1,3 +1,6 @@
+/**
+ * This package was copied directly from https://github.com/jubnzv/go-taskwarrior/blob/master/taskrc.go
+ **/
 package taskwarrior
 
 import (
