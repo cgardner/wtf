@@ -51,6 +51,7 @@ import (
 	"github.com/wtfutil/wtf/modules/spotifyweb"
 	"github.com/wtfutil/wtf/modules/status"
 	"github.com/wtfutil/wtf/modules/subreddit"
+	"github.com/wtfutil/wtf/modules/task"
 	"github.com/wtfutil/wtf/modules/textfile"
 	"github.com/wtfutil/wtf/modules/todo"
 	"github.com/wtfutil/wtf/modules/todoist"
@@ -232,6 +233,9 @@ func MakeWidget(
 	case "subreddit":
 		settings := subreddit.NewSettingsFromYAML(moduleName, moduleConfig, config)
 		widget = subreddit.NewWidget(app, pages, settings)
+	case "task":
+		settings := task.NewSettingsFromYAML(moduleName, moduleConfig, config)
+		widget = task.NewWidget(app, pages, settings)
 	case "textfile":
 		settings := textfile.NewSettingsFromYAML(moduleName, moduleConfig, config)
 		widget = textfile.NewWidget(app, pages, settings)
